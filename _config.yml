@@ -3,7 +3,7 @@ name: 'Naveen Honest Raj'
 description: 'Engineer plus product enthusiast who binge watches TV shows during coffee break.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: ''
+baseurl: 'https://naveenhonestraj.in'
 email: 'naveendurai19@gmail.com'
 
 include: ["_pages"]
