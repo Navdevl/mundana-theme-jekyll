@@ -1,9 +1,9 @@
 ---
-title: "Mundana Free Jekyll Theme"
+title: "Naveen Honest Raj - Personal Blogging"
 layout: default
 pagination:
     enabled: true
-description: "A great Jekyll theme developed by Sal @wowthemesnet."
+description: "Naveen Honest Raj is a product enthusiast."
 ---
 
 
@@ -14,6 +14,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
     
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
+{% if false %}
 <div class="row remove-site-content-margin">
     
     <!-- latest post -->
@@ -132,7 +133,9 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     </div>
     
 </div>
-    
+{% endif %}
+
+{% if true %}
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
 {% if post.tags contains "sticky" %}
@@ -153,13 +156,8 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 </div> 
 {% endif %}
 {% endfor %}
-
-
-    
-
-
-{% endif %} <!--endif page url is / -->
-    
+{% endif %}
+{% endif %}
 
 
 <!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
@@ -170,11 +168,8 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
         
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
-
         {% for post in paginator.posts %}
-        
             {% include main-loop-card.html %}
-        
         {% endfor %}
         
         <div class="mt-5">
