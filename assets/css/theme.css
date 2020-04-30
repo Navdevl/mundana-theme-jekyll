@@ -631,7 +631,7 @@ ol.list-featured li:before {
     margin-right: 0.5rem;
     font-family: Arial;
     line-height: 1;
-    opacity: .1;
+    opacity: .25;
 }
 .catlist .sep:last-child {
 	display:none;
@@ -644,9 +644,7 @@ footer {
 .sticky-top-offset {
 	top:70px;
 }
-.homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
-	/*display:none !important;*/
-}
+
 .excerpt {
     color: rgba(0,0,0,0.59);
     margin-top:10px;
@@ -663,7 +661,7 @@ article {
     line-height: 1.15;
     color: #222222;
 }
-article p,article pre,article figure,article img,article blockquote,article iframed,article embed {
+article pre,article figure,article img,article blockquote,article iframed,article embed {
 	margin-bottom:2rem;
 }
 article blockquote {

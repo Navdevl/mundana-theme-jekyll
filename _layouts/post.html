@@ -52,6 +52,9 @@ layout: default
           {% if tag == 'sticky' %}
             {% continue %}
           {% endif %}
+          {% if tag == 'featured' %}
+            {% continue %}
+          {% endif %}
 				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
 				{% endfor %}
 				</span>

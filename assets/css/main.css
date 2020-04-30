@@ -46,7 +46,9 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  zoom: 99.2%;
+}
 
 html {
   font-family: sans-serif;
