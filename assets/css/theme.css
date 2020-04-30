@@ -13,6 +13,9 @@ body {
 .remove-site-content-margin {
 	margin-top:-30px;
 }
+.twitter-color {
+	color: #00acee;
+}
 img {
 	max-width:100%;
 }

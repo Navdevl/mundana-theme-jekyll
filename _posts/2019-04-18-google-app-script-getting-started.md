@@ -62,7 +62,7 @@ You will see a `Code.gs` file with an empty function over there. Don’t panic. 
 ### Building the Menu bar
 Now there’s a bit of code we will do that will make our sheet to create a magical menu bar like the image below.
 
-![building the menu bar](/blog/assets/images/google-sheets-addon/building-the-menu-bar.png){:class="img-responsive"}
+![building the menu bar](/assets/images/google-sheets-addon/building-the-menu-bar.png){:class="img-responsive"}
 
 See the last menu option `Getting Started`. It also has an option to `Sync with API..` in it. This is an easy one to build.
 
@@ -116,7 +116,7 @@ _Now line 4-7, is usual thing that we do in JS. If still you aren’t familiar, 
 
 _Line 9-10 does our magic. Voila!_
 
-![Voila](/blog/assets/images/google-sheets-addon/voila.png){:class="img-responsive"}
+![Voila](/assets/images/google-sheets-addon/voila.png){:class="img-responsive"}
 
 This isn’t a great achievement, though! But it is still a progress and it does matter. Now, go do your work on the remaining part of the code and let me know what you are messing up while doing this and I am always on Twitter to help you out.
 
