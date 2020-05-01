@@ -5,6 +5,7 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 url: 'https://naveenhonestraj.in'
 email: 'naveendurai19@gmail.com'
+twitter_username: 'nav_devl'
 
 include: ["_pages"]
 permalink: /:title/
