@@ -4,7 +4,7 @@ title: It is okay for movies to be bad.
 categories:
 - movies
 - culture
-image: "/assets/images/movies-netflix.jpg"
+image: assets/images/movies-netflix.jpg
 tags: []
 
 ---
