@@ -4,7 +4,7 @@ title: It is okay for movies to be bad.
 categories:
 - movies
 - culture
-image: uploads/charles-deluvio-jtmwD4i4v1U-unsplash.jpg
+image: assets/images/charles-deluvio-jtmwD4i4v1U-unsplash.jpg
 tags: []
 
 ---
@@ -16,4 +16,4 @@ This writing of mine isn't a rant. I don't prefer to rant, actually. But I am ju
 >
 > \- Michael Scott, The Office
 
-![movies](/uploads/charles-deluvio-jtmwD4i4v1U-unsplash.jpg "Movies")
+![movies](/assets/images/charles-deluvio-jtmwD4i4v1U-unsplash.jpg "Movies")
