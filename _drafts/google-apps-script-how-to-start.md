@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Apps Script - How to start?
+title: It is okay for movies to be bad.
 categories:
 - movies
 - culture
