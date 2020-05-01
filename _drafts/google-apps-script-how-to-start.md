@@ -16,6 +16,4 @@ This writing of mine isn't a rant. I don't prefer to rant, actually. But I am ju
 >
 > \- Michael Scott, The Office
 
-![](/assets/images/screenshot.jpg)![](/assets/images/charles-deluvio-jtmwD4i4v1U-unsplash.jpg "OK")
-
 hello world
