@@ -10,7 +10,7 @@ Hello devs! This article is solely written for Django devs, but other devs can a
 <br>
 <br>
 
-# So what is CTE?
+## So what is CTE?
 Few databases provides a way to store temporary results in a label(named dataset), that can be reused in the following queries. There are tons of articles written to explain CTE, but still here’s my part.
 
 When I was explaining the same to my good old friend about Common Table Expression, she was like, “I’ll just use derived table for this. Why CTE?”. So, yes! There is a benefit of using CTE over derived table.
@@ -57,7 +57,7 @@ If you really wanted me to explain the above SQL, you might need to brush up you
 
 So, yes! CTE is really a friendly choice to take.
 
-## Now taking it to our Django part
+### Now taking it to our Django part
 I was working on an application where we have Categories and these categories have subcategories and the depth goes on.
 
 The python (fake) model looks like below.
@@ -83,7 +83,7 @@ def get_descendants(root_category):
 Do you know the number of DB calls this function was making? A lot. Too many.
 If the depth of categories are M and the width is N, our function was making M+N calls to DB. I was like 😭
 
-## To the rescue
+### To the rescue
 Then CTE came to the rescue. CTE has an awesome way to handle this problem using WITH RECURSIVE.
 You can read more on this here [https://www.postgresql.org/docs/9.1/queries-with.html](https://www.postgresql.org/docs/9.1/queries-with.html)
 

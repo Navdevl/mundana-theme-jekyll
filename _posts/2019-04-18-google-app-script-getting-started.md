@@ -9,7 +9,7 @@ tags: [featured]
 Hello! Hola! You might be trying to learn to do some basic automation with Google App Script and trying to figure out where to start. Great, finally you are on the right place.
 
 <br>
-# What is Google App Script?
+## What is Google App Script?
 For people who have little or no idea on GAS, let me put it in very simple ways. GAS is a platform released by Google to enable their power users to make more impact through their app.
 
 You can do a lot of magic on MOST of Google’s applications say Sheets, Doc, Gmail etc.
@@ -22,7 +22,7 @@ Now, you can simply wrap your Google sheets around the API and automatically str
 
 End of the month, you can share it with your fam & friends (if you need to boast about your strategical money spending methods).
 
-# It is all simple Javascript
+## It is all simple Javascript
 _Where should I be starting might be your first question?_
 
 You should be aware of some Javascript concepts and familiarise with basics like variables, functions, loops and conditions. This is more than enough to do a simple application.
@@ -37,7 +37,7 @@ You can brush your JS skills in the following sites. The scope of our article wi
 
 These courses also cover the ES6 part of Javascript. But Google is not yet released any support to ES6, so you can’t type ES6 stuffs on the [script.google.com](script.google.com) (Although there are few workarounds, that aren’t covered in our topic)
 
-# Starting with the Basics
+## Starting with the Basics
 We are going to create a Sheets app that will fetch an API and fill our sheets.
 
 This is our data that we are going to fill our Sheets app with.
@@ -54,12 +54,12 @@ This is our data that we are going to fill our Sheets app with.
 }
 ```
 
-### Create a Google Sheet application
+#### Create a Google Sheet application
 Go to sheets.new and save the sheet with the name your prefer. Now, click on `Tools -> Script Editor`. This will take you to [script.google.com](script.google.com). Save the project.
 
 You will see a `Code.gs` file with an empty function over there. Don’t panic. GoogleScript(.gs) is similar to Javascript(.js). A very few differences have to be noted, but we are not covering in this blog. Interested folks can DM on [Twitter](https://twitter.com/nav_devl) and I can help you on this.
 
-### Building the Menu bar
+#### Building the Menu bar
 Now there’s a bit of code we will do that will make our sheet to create a magical menu bar like the image below.
 
 ![building the menu bar](/assets/images/google-sheets-addon/building-the-menu-bar.png){:class="img-responsive"}
@@ -87,7 +87,7 @@ In the line 6, we select the active sheet from our app and in line 10 we are add
 
 We are going to define the `syncAPI` function for our line 8 in the next section!
 
-### Define your own magic
+#### Define your own magic
 So, now we are near to our `endgame`. We are going to define our `syncAPI` function which is going to make call to [http://www.mocky.io/v2/5cd69dbf300000aa00606184](http://www.mocky.io/v2/5cd69dbf300000aa00606184) and fill the data from there to our application.
 
 GoogleAppScript provides a different way to make an HTTP call from the appscript. It provides a [function](https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app) called `UrlFetchApp` which takes in url and `options` as params and fetches response from the given input.
@@ -120,7 +120,7 @@ _Line 9-10 does our magic. Voila!_
 
 This isn’t a great achievement, though! But it is still a progress and it does matter. Now, go do your work on the remaining part of the code and let me know what you are messing up while doing this and I am always on Twitter to help you out.
 
-# What’s next?
+## What’s next?
 There are few things you can progressively learn after doing this.
 
 1. Learn about the appscript.json - the manifest file and how to do scopes etc.
