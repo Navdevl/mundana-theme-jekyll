@@ -4,7 +4,7 @@ title: It is okay for movies to be bad.
 categories:
 - movies
 - culture
-image: assets/uploads/charles-deluvio-jtmwD4i4v1U-unsplash.jpg
+image: uploads/charles-deluvio-jtmwD4i4v1U-unsplash.jpg
 tags: []
 
 ---
@@ -15,3 +15,5 @@ This writing of mine isn't a rant. I don't prefer to rant, actually. But I am ju
 > "There is no such thing as an appropriate joke, that's why it's a joke."
 >
 > \- Michael Scott, The Office
+
+![](/uploads/charles-deluvio-jtmwD4i4v1U-unsplash.jpg)
