@@ -4,7 +4,7 @@ title: It is okay for movies to be bad.
 categories:
 - movies
 - culture
-image: uploads/charles-deluvio-jtmwD4i4v1U-unsplash.jpg
+image: assets/uploads/charles-deluvio-jtmwD4i4v1U-unsplash.jpg
 tags: []
 
 ---
