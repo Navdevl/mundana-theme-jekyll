@@ -2,7 +2,7 @@
 layout: post
 title: 'Just a random thought #1'
 categories: []
-image: assets/images/homo-sapiens.jpg
+image: assets/images/homo-sapiens.jpeg
 tags: []
 
 ---
