@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 'Just a random thought #1'
-categories: []
+categories:
+- random
 image: assets/images/homo-sapiens.jpeg
 tags: []
 
