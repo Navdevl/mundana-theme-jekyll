@@ -1,35 +1,15 @@
 ---
 layout: post
-title: It is okay for movies to be bad.
-categories:
-- movies
-- culture
+title: 'Just a random thought #1'
+categories: []
 image: assets/images/movies-netflix-min.jpg
 tags: []
 
 ---
-Recently, I am seeing a lot of support for the posts that pick scenes from movies that range from 2000 till now, and rant about how sexist the scenes are, how comedies are made out of body shaming and a huge list of rant goes on and on.
+I am reading "Sapiens" by Yuval Noah Harari. While reading a specific paragraph, I had this weird thought. This is completely random, so no judgements.
 
-I try to not end up ranting but come clean at the end. Plus I wanted to write this and make a note of the opinions I am having on May 2nd 2020. (Yes, this is when the quarantine was going on)
+> The appearance of new ways of thinking and communicating, between 70,000 and 30,000 years ago, constitutes the Cognitive Revolution. What caused it? We’re not sure. The most commonly believed theory argues that accidental genetic mutations changed the inner wiring of the brains of Sapiens, enabling them to think in unprecedented ways and to communicate using an altogether new type of language. We might call it the Tree of Knowledge mutation. Why did it occur in Sapiens DNA rather than in that of Neanderthals? It was a matter of pure chance, as far as we can tell. But it’s more important to understand the consequences of the Tree of Knowledge mutation than its causes. What was so special about the new Sapiens language that it enabled us to conquer the world?*
 
-**Let's start with an interesting quote from a legend**
+What if humans figured out a way to get nutrients through a different way instead of our natural way. Something like, we inject nutrients, but not eat. i.e, we stop using our mouth. What if at some point of time, we figure out a ways to record our brain waves and send messages using just our thoughts. 
 
-> "There is no such thing as an appropriate joke, that's why it's a joke."
->
-> \- Michael Scott, The Office
-
-So, mostly things I talk about in here are from what I have observed, inferred from those happenings and came to a conclusion that is subjectively right to me.
-
-In this past year, the movies in India, fortunately(or unfortunately) got this over passion about making moral films that conveys meaningful patriotism towards the country or standing up against a huge-list-of-discriminations, or maybe pick topics around patriarchy and so on. I am not someone who is actually against this. I support. I love how some lives are touched by these movies and some find solace in seeing a lot of like-minded people like them. It is cool.
-
-What I find uncool about this is, the lovely audience(not all of them) who really really related themselves with these over passionate movies (and some actually don't but still for the sake of attention tried to relate), started finding faults on the old movies that depicted romance of their own period.
-
-I love this movie **Alaipayudhey,** which now turns out to be a movie that motivates people to stalk. No it didn't do that to me. You could think, "Well, Naveen.. if it didn't do anything to you doesn't means it didn't do anything to other audiences". I agree on that. 
-
-But here's my point. One cannot dictate an artist to use this specific colour, this specific stroke in paint, this specific palette to follow. Art flows from the artist. That profound thought of creativity he gets is from the surrounding itself (most the times). It is so funny if I go to an amazing painter and ask him to do an extra-ordinary art only with a green colour. 
-
-Well, we can talk a lot on this. About body-shaming as a humor should be removed is one hot topic. I mean, why? Is it a trend to pull everything into a sensitive topic. What you are asking is, to do a humor with no swear words, no body-shaming, no offensive scenarios, no comedy.  Thanks for ordering a blank slate.
-
-**This is how I see,**
-
-Enjoy the movie that supports special causes, spreads awareness and do good deeds. But, try not to call the other movies that didn't support your causes as "trash". You are burning the art and murdering the artists. I don't want to live a world without artists. Finn.
+Do we then mutate interms of cognition again? Plus a whole physical mutation too? Another evolution where we end up like the aliens we usually imagine to be. No mouth. Big brains. The chances are too high, I declare.
