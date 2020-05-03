@@ -1,19 +1,20 @@
 ---
 layout: post
-title: 'Just a random thought #1'
+title: To all those under appreciated successful people
 categories:
 - random
-image: assets/images/homo-sapiens.jpeg
+image: assets/images/successful-people.jpg
 tags: []
 
 ---
-I am reading "Sapiens" by Yuval Noah Harari. While reading a specific paragraph, I had this weird thought. This is completely random, so no judgements.
-<br>
-<br>
-<br>
+Elon Musk, Jeff Bezos, Warren Buffett and a list of entrepreneurs are tagged as "successful" because of their lifestyle, consistency, persistence and etcetera etcetera. 
 
-> The appearance of new ways of thinking and communicating, between 70,000 and 30,000 years ago, constitutes the Cognitive Revolution. What caused it? We’re not sure. The most commonly believed theory argues that accidental genetic mutations changed the inner wiring of the brains of Sapiens, enabling them to think in unprecedented ways and to communicate using an altogether new type of language. We might call it the Tree of Knowledge mutation. Why did it occur in Sapiens DNA rather than in that of Neanderthals? It was a matter of pure chance, as far as we can tell. But it’s more important to understand the consequences of the Tree of Knowledge mutation than its causes. What was so special about the new Sapiens language that it enabled us to conquer the world?
+I had the same belief. I mean I used to have this same belief when I was in my college days. That's the formula for success. Boom, I'd be successful one day. Then, when I started to meet a lot of people who had ideas gone wrong, failed startups because of N number of reasons also had the same formula applied. Looking at their level of efforts they put in, it was crazy amount and still ended up with a failed one.
 
-What if humans figured out a way to get nutrients through a different way instead of our natural way. Something like, we inject nutrients, but not eat. i.e, we stop using our mouth. What if at some point of time, we figure out a ways to record our brain waves and send messages using just our thoughts.
+More on that, nobody remembers them for whatever-crazy-think they did because they didn't reach the stardom like the "usual success people" we term. Honestly, there's a part of luck and timing is also needed. Like Elon says, hardwork just increases the possibility/chances of luck to happen. That is all. 
 
-Do we then mutate interms of cognition again? Plus a whole physical mutation too? Another evolution where we end up like the aliens we usually imagine to be. No mouth. Big brains. The chances are too high, I declare.
+So, without luck, are these people are just common folks like us? Not at all. Some people ran their startups for 4-5years, helped a family to get their kid to be an Engineer. Some people has this big collection of learning that you can pick up just by a few minutes of talk. And this list also goes on and on.
+
+Here, I'd like to salute those people, who did something because they wanted to and maybe they aren't successful today, but they aren't standing as the same person like yesterday. My salutes to them.
+
+Finn.
