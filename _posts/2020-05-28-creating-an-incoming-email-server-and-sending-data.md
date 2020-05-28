@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Creating an Incoming only email server + send data to an application server
-categories: [engineering]
-image: assets/images/postfix.png
+categories:
+- engineering
+image: assets/images/postfix.jpg
 tags: []
 
 ---
