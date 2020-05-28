@@ -17,7 +17,7 @@ This is what I was actually trying to do. I wanted to setup an incoming mail ser
 There's always a recipe to any magic that has been established in the history. Coming to our magical idea, we need the following items.
 
 * Domain name. (Mine is slooshers.xyz, found it cheap, bought it quick)
-* A very small instance. (Be it aws or digitalocean or anything that you love. I am currently going with digitalocean because I have some free credits)
+* A very small instance. (Be it aws or digitalocean or anything that you love. I am currently going with digitalocean because I have some free credits) Ubuntu 16.04 is my usual choice.
 * Basic understanding of linux
 * Patience
 
@@ -47,3 +47,31 @@ So, let's go configure the A record in few seconds.
 Boom! Done. This might take like 2-5minutes for the DNS to properly reflect the changes. But that is all. You can maybe have a quick walk to your balcony and come back.
 
 ## Testing the configuration
+
+There are few online services to check if you A name and MX record configurations are established properly. I tested mine at [https://mxtoolbox.com/](https://mxtoolbox.com/ "https://mxtoolbox.com/")
+
+## Installing Postfix
+
+As per wiki, **_Postfix_** is a free and open-source mail transfer agent (MTA) that routes and delivers electronic mail. In order to understand the complete workflow of how email works, there are tons of resources out there and we aren't covering them in this post. You can still go refer to these below resources where I found some ideas on the email and how everything happens.
+
+Now, let us roll our sleeves and start our work.
+
+ 1. First ssh into your instance. Once you are in, make sure to update it by running `apt-get update` 
+ 2. Change your hostname value because this will be very much needed in a lot of places. Run `vi /etc/hostname/` and change the value to **mailer** and save it.
+ 3. Verify it by typing `hostname -f` in the command line to check your FQQN. Mine will display the following  
+    _root@mailer:\~# hostname -f_
+
+    _mailer.slooshers.xyz_ 
+ 4. Then install postfix by running `apt-get install postfix` 
+ 5. Postfix installation will ask you to go through a wizard workflow to setup.
+
+    ![](/assets/images/screenshot-2020-05-28-at-11-20-07-pm.png)
+ 6. Choose **Internet Site**
+ 7. Now, verify if your hostname if properly filled as per the FQDN.
+ 8. For **Root and postmaster mail recipient,** just for now you can leave this blank
+ 9. In the other destinations make sure both mailer.yourdomain.com and yourdomain.com exists. Because this is very much needed as per our story line.
+10. Other things, you can just go with default.
+
+If any of the above steps didn't occur to you, you can run `dpkg-reconfigure postfix` and reconfigure again. Don't sweat. 
+
+Right now, we are at 50% work done.
