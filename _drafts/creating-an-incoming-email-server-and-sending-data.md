@@ -82,7 +82,7 @@ Most our work is going to revolve around postfix's configuration from now on. Yo
 
 Preferably cd into that directory for more ease. 
 
-You will find `main.cf` file inside the directory which is going to cover almost what we are going to go with here. So, I am cutting down a lot of unnecessary elements of explanation in here to explain each of the configuration variables inside `main.cf` and going to share the configuration that I am currently using.
+You will find **main.cf** file inside the directory which is going to cover almost what we are going to go with here. So, I am cutting down a lot of elements in here to explain each of the configuration variables inside **main.cf** and going to share the configuration that I am currently using.
 
     smtpd_banner = $myhostname ESMTP $mail_name $mail_version
     biff = no
@@ -107,14 +107,14 @@ You will find `main.cf` file inside the directory which is going to cover almost
     
     smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
 
-Most probably except for `transport_maps` you might have a lot of other things in there.
+Most probably except for **transport_maps** you might have a lot of other things in there.
 
-Like I said earlier, we aren't writing this with any security installed, so we can remove sasl related vars. You can use my part of snippet and edit a little of your own.
+Like I said earlier, we aren't writing this with any security installed, so we can remove sasl related vars. _You can use my part of snippet and edit a little of your own._
 
 Few things you might have to edit is,
 
-1. Adding your instance ip to the mynetworks
-2. Adding `transport_maps` to transport mail to a postfix pipe.
+1. Adding your instance ip to the **mynetworks**
+2. Adding **transport_maps** to transport mail to a postfix pipe.
 
 ### What is a catch-all email?
 
@@ -141,9 +141,11 @@ Hurraayyyy. So, finally we started receiving email. Now, how can we pipe this em
 
 Postfix has an approach calling piping where you pipe information to the other process, be it script or file or anything.
 
-Before that we need to create our transport file. We have mentioned a variable `transport_maps = regexp:/etc/postfix/redirect.regexp` and this is our guy. Open `/etc/postfix/redirect.regexp` and enter this following regexp catpturer:
+Before that we need to create our transport file. 
 
-`/^.*@slooshers\.xyz/   slooshershook:`
+We have mentioned a variable `transport_maps = regexp:/etc/postfix/redirect.regexp` and this is our guy. 
+
+Open `/etc/postfix/redirect.regexp` and enter this following regexp catpturer: `/^.*@slooshers\.xyz/  slooshershook:`
 
 The first part is our email address capturer and the next part is the pipename. We will define the pipe's functionality in the master configuration file.
 
@@ -151,7 +153,7 @@ Open `/etc/postfix/master.cf` and add this simple line.
 
 `slooshershook unix - n n - - pipe flags=FR user=naveen argv=/usr/bin/python3 /home/scripts/webhook.py ${sender} ${recipient}`
 
-This one line will ping the script present in `/home/scripts/webhook.py` with arguments as `email of sender` and `email of receiver`. Now you might ask, where is the email content. That's the magic. So, while it is being piped, the content is in the `stdin` and when we are writing our script, we should make sure to read from the stdin.
+This one line will ping the script present in `/home/scripts/webhook.py` with arguments as **sender's email** and **receiver's email**. Now you might ask, where is the email content. That's the magic. So, while it is being piped, the content is in the **stdin** and when we are writing our script, we should make sure to read from the stdin.
 
 ### Adding a simple script for you. 
 
