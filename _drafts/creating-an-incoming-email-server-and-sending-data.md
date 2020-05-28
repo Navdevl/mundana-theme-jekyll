@@ -2,7 +2,7 @@
 layout: post
 title: Creating an Incoming only email server + send data to an application server
 categories: []
-image: assets/images/successful-people.jpg
+image: assets/images/postfix.png
 tags: []
 
 ---
@@ -159,6 +159,7 @@ This one line will ping the script present in `/home/scripts/webhook.py` with ar
 
 Here's a script where it reads the content from the stdin and logs in a file.
 
+
     #!/usr/bin/python
     import logging
     import sys
@@ -174,4 +175,4 @@ Here's a script where it reads the content from the stdin and logs in a file.
 
 Now, the above code just dumps the content to log file. I guess with the above idea, you can actually do a lot more like, making a API request with the data of content as payload and parsing it with email libraries.
 
-Actually if you really want to discuss more on this and see more on the complete thing I did, please feel free to ping me on [twitter](https://twitter.com/nav_devl "Twitter"). 
+Actually if you really want to discuss more on this and see more on the complete thing I did, please feel free to ping me on [twitter](https://twitter.com/nav_devl "Twitter").
