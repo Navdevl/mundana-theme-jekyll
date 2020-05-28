@@ -75,3 +75,33 @@ Now, let us roll our sleeves and start our work.
 If any of the above steps didn't occur to you, you can run `dpkg-reconfigure postfix` and reconfigure again. Don't sweat. 
 
 Right now, we are at 50% work done.
+
+## Get the incoming mails in
+
+Most our work is going to revolve around postfix's configuration from now on. You can find the postfix configuration files at `/etc/postfix.`
+
+Preferably cd into that directory for more ease. 
+
+You will find `main.cf` file inside the directory which is going to cover almost what we are going to go with here. So, I am cutting down a lot of unnecessary elements of explanation in here to explain each of the configuration variables inside `main.cf` and going to share the configuration that I am currently using.
+
+    smtpd_banner = $myhostname ESMTP $mail_name $mail_version
+    biff = no
+    
+    append_dot_mydomain = no
+    readme_directory = no
+    compatibility_level = 2
+    
+    myhostname = mailer.slooshers.xyz
+    myorigin = /etc/mailname
+    mydestination = mailer.slooshers.xyz, mailer.slooshers.xyz, slooshers.xyz, localhost.slooshers.xyz, , localhost
+    relayhost =
+    mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 167.71.230.101
+    mailbox_size_limit = 0
+    recipient_delimiter = +
+    inet_interfaces = all
+    inet_protocols = all
+    
+    alias_maps = hash:/etc/aliases
+    alias_database = hash:/etc/aliases
+    transport_maps = regexp:/etc/postfix/redirect.regexp
+    
