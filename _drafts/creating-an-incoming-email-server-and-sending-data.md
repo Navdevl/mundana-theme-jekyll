@@ -10,7 +10,7 @@ This is a quick writeup on what I was doing for the past couple of day and night
 
 ## The initial idea
 
-This is what I was actually trying to do. I wanted to setup an incoming mail server(as this is an initial quick idea, no security elements will be involved in this blog) and I wanted to catch-all the emails that are coming to my email server, get the payload and hit an API endpoint where I can do some further secret magic. 
+This is what I was actually trying to do. I wanted to setup an incoming mail server(as this is an initial quick idea, no security elements will be involved in this blog) and I wanted to catch-all the emails that are coming to my email server, get the payload and hit an API endpoint where I can do some further secret magic.
 
 ## The requirements
 
@@ -56,13 +56,13 @@ As per wiki, **_Postfix_** is a free and open-source [mail transfer agent (MTA)]
 
 Now, let us roll our sleeves and start our work.
 
- 1. First ssh into your instance. Once you are in, make sure to update it by running `apt-get update` 
+ 1. First ssh into your instance. Once you are in, make sure to update it by running `apt-get update`
  2. Change your hostname value because this will be very much needed in a lot of places. Run `vi /etc/hostname/` and change the value to **mailer** and save it.
  3. Verify it by typing `hostname -f` in the command line to check your FQQN. Mine will display the following  
     _root@mailer:\~# hostname -f_
 
-    _mailer.slooshers.xyz_ 
- 4. Then install postfix by running `apt-get install postfix` 
+    _mailer.slooshers.xyz_
+ 4. Then install postfix by running `apt-get install postfix`
  5. Postfix installation will ask you to go through a wizard workflow to setup.
 
     ![](/assets/images/screenshot-2020-05-28-at-11-20-07-pm.png)
@@ -72,7 +72,7 @@ Now, let us roll our sleeves and start our work.
  9. In the other destinations make sure both mailer.yourdomain.com and yourdomain.com exists. Because this is very much needed as per our story line.
 10. Other things, you can just go with default.
 
-If any of the above steps didn't occur to you, you can run `dpkg-reconfigure postfix` and reconfigure again. Don't sweat. 
+If any of the above steps didn't occur to you, you can run `dpkg-reconfigure postfix` and reconfigure again. Don't sweat.
 
 Right now, we are at 50% work done.
 
@@ -80,7 +80,7 @@ Right now, we are at 50% work done.
 
 Most our work is going to revolve around postfix's configuration from now on. You can find the postfix configuration files at `/etc/postfix.`
 
-Preferably cd into that directory for more ease. 
+Preferably cd into that directory for more ease.
 
 You will find **main.cf** file inside the directory which is going to cover almost what we are going to go with here. So, I am cutting down a lot of elements in here to explain each of the configuration variables inside **main.cf** and going to share the configuration that I am currently using.
 
@@ -120,14 +120,14 @@ Few things you might have to edit is,
 
 So usually, in a usual email setup, each user has an email. i.e, for one email to be present, we need to create a user. But a catch-all email is a simple nice trick where you actually catch any email set to your mailer domain and redirect it to the same user.
 
-In our to do the catch-all emailing, we need to create an alias.   
+In our to do the catch-all emailing, we need to create an alias.  
 So if you check our configuration we have alias_maps pointing to `/etc/aliases` . Let us open the file and add this following configuration
 
 `@slooshers.xyz root`
 
 and save it. _The above line does the following trick._
 
-_Say you are sending email to naveen@slooshers.xyz, this will be redirected to root user. Say you are sending email to honest@slooshers.xyz, it will also be redirected to the root user. Nice trick. So, there's no email rejection happen in this case._ 
+_Say you are sending email to naveen@slooshers.xyz, this will be redirected to root user. Say you are sending email to honest@slooshers.xyz, it will also be redirected to the root user. Nice trick. So, there's no email rejection happen in this case._
 
 Now are are all set, let us try sending email. Before sending have your mail log file opened to see the log when a mail is received by your system.
 
@@ -141,11 +141,11 @@ Hurraayyyy. So, finally we started receiving email. Now, how can we pipe this em
 
 Postfix has an approach calling piping where you pipe information to the other process, be it script or file or anything.
 
-Before that we need to create our transport file. 
+Before that we need to create our transport file.
 
-We have mentioned a variable `transport_maps = regexp:/etc/postfix/redirect.regexp` and this is our guy. 
+We have mentioned a variable `transport_maps = regexp:/etc/postfix/redirect.regexp` and this is our guy.
 
-Open `/etc/postfix/redirect.regexp` and enter this following regexp catpturer: `/^.*@slooshers\.xyz/  slooshershook:`
+Open `/etc/postfix/redirect.regexp` and enter this following regexp catpturer: `/^.*@slooshers\.xyz/ slooshershook:`
 
 The first part is our email address capturer and the next part is the pipename. We will define the pipe's functionality in the master configuration file.
 
@@ -155,10 +155,9 @@ Open `/etc/postfix/master.cf` and add this simple line.
 
 This one line will ping the script present in `/home/scripts/webhook.py` with arguments as **sender's email** and **receiver's email**. Now you might ask, where is the email content. That's the magic. So, while it is being piped, the content is in the **stdin** and when we are writing our script, we should make sure to read from the stdin.
 
-### Adding a simple script for you. 
+### Adding a simple script for you.
 
 Here's a script where it reads the content from the stdin and logs in a file.
-
 
     #!/usr/bin/python
     import logging
