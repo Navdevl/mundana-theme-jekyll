@@ -3,7 +3,7 @@ layout: post
 title: 'Some random scribble on July 10 '
 categories:
 - Random
-image: "/assets/images/scribbles.jpeg"
+image: assets/images/scribbles.jpeg
 tags:
 - life
 
