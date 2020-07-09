@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Some random scribble on July 10 '
+title: Some random scribble on July
 categories:
 - Random
 image: assets/images/scribbles.jpeg
