@@ -22,4 +22,4 @@ fields:
     required: false
   label: image
 pages:
-- _posts/some-random-scribble-on-july-10.md
+- _posts/2020-07-09-some-random-scribble-on-july-10.md
