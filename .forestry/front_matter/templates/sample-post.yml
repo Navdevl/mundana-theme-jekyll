@@ -13,11 +13,13 @@ fields:
 - type: list
   name: categories
   label: categories
-- type: file
-  name: image
-  label: image
 - type: list
   name: tags
   label: tags
+- name: image
+  type: text
+  config:
+    required: false
+  label: image
 pages:
 - _posts/some-random-scribble-on-july-10.md
